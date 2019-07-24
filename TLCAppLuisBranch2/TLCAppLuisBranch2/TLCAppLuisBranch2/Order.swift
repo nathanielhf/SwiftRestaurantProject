@@ -11,7 +11,7 @@ import Foundation
 class Order {
     //var Quantity: Int?
     // items array takes tuple with values MenuItem (a food/beverage object) and Quantity
-    var items = [(MenuItem: MenuItem, Quantity: Int)]()
+    var items = [MenuItem]()
     
     // add item function
     func addItem(_ newItem: MenuItem){
@@ -27,28 +27,16 @@ class Order {
         
         // if items does not contain a MenuItem with given name, append new MenuItem
         // else if items already contains given MenuItem, increment quantity
+    
+        let indexOfItem = items.firstIndex(where: { $0.name == newItem.name})
+        if (indexOfItem != nil) {
+            items[indexOfItem!].quantity! += 1
+        }
         else {
-            var indexOfItem = items.in
-            if (find())
-//            var alreadyInOrder: Bool = false
-//
-//            for item in items {
-//                if (item.MenuItem.name == newItem.name) {
-//                    alreadyInOrder = true
-//                }
-//            }
-//
-//            if alreadyInOrder == false {
-//                items.append((newItem, 1))
-//            }
-//            else {
-//                items[newItem.name]
-//            }
-            
+            items.append(newItem)
         }
        
     }
-    
     // remove item function
         // if reaches 0, remove item from items array
 }

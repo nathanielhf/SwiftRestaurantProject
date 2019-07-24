@@ -15,4 +15,11 @@ class MenuItem {
     public var description: String?
     public var price: Double?
     public var quantity: Int?
+   
+    public init?(name: String, description: String, price: Double){
+        self.name = name
+        self.description = description
+        self.price = price
+        self.quantity = 1
+    }
 }
