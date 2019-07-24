@@ -14,6 +14,7 @@
 		3758FCD122E3A8F400F18779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3758FCCF22E3A8F400F18779 /* LaunchScreen.storyboard */; };
 		3758FCD922E3AB0300F18779 /* BeveragesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758FCD822E3AB0300F18779 /* BeveragesViewController.swift */; };
 		37AB895A22E8BE2F00878622 /* itemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB895922E8BE2F00878622 /* itemViewController.swift */; };
+		E8F056C122E8EFA10033004F /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F056C022E8EFA10033004F /* OrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3758FCD222E3A8F400F18779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3758FCD822E3AB0300F18779 /* BeveragesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesViewController.swift; sourceTree = "<group>"; };
 		37AB895922E8BE2F00878622 /* itemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemViewController.swift; sourceTree = "<group>"; };
+		E8F056C022E8EFA10033004F /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				3758FCC622E3A8F300F18779 /* AppDelegate.swift */,
 				3758FCC822E3A8F300F18779 /* ViewController.swift */,
 				3758FCCA22E3A8F300F18779 /* Main.storyboard */,
+				E8F056C022E8EFA10033004F /* OrderViewController.swift */,
 				37AB895922E8BE2F00878622 /* itemViewController.swift */,
 				3758FCD822E3AB0300F18779 /* BeveragesViewController.swift */,
 				3758FCCD22E3A8F400F18779 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3758FCC922E3A8F300F18779 /* ViewController.swift in Sources */,
+				E8F056C122E8EFA10033004F /* OrderViewController.swift in Sources */,
 				37AB895A22E8BE2F00878622 /* itemViewController.swift in Sources */,
 				3758FCC722E3A8F300F18779 /* AppDelegate.swift in Sources */,
 				3758FCD922E3AB0300F18779 /* BeveragesViewController.swift in Sources */,
