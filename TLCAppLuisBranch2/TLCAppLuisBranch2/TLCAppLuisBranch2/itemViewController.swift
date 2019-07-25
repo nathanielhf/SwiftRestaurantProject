@@ -30,6 +30,30 @@ class itemViewController: UIViewController {
         itemName.text = selectedName
         itemPrice.text = String(format: "%.2f", selectedPrice!)
         itemDescription.text = selectedDesc
+        itemQuantity.text = "0"
     }
-
+    
+    @IBAction func stepperItemQuantity(_ sender: UIStepper) {
+        itemQuantity.text = String(format: "%d", sender.value)
+        
+    }
+    // add function to change quantity of item
+    // and create new object of item if doesn't exist
+    
+    // do we need to send the object back using a segue? perhaps it can simply be added to an Order object instatiated in a different file
+    @IBAction func btnConfirmItem(_ sender: UIButton) {
+        let quantity: Int = Int(itemQuantity.text!)!
+        
+        // if one item, add 1 item to newOrder array (quantity defaults to 1)
+        if (quantity == 1) {
+            let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!)
+            newOrder?.addItem(newItem!)
+        }
+        // else set quantity of newItem to stepper-specified quantity
+        else if (quantity > 1) {
+            let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!, quantity: quantity)
+            newOrder?.addItem(newItem!)
+        }
+    }
+    
 }

@@ -30,6 +30,7 @@ var foodIndex : Int?
 // this is passed to itemView on segue
 // itemView can increase quantity of item or remove it from DS altogether
 // .... I want this to be similar to an array of objects
+var newOrder = Order()
 
 class BeveragesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     

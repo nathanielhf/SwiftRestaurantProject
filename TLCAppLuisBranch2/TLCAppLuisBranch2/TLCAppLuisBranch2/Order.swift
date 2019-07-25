@@ -13,6 +13,10 @@ class Order {
     // items array takes tuple with values MenuItem (a food/beverage object) and Quantity
     var items = [MenuItem]()
     
+    public init?() {
+        self.items = []
+    }
+    
     // add item function
     func addItem(_ newItem: MenuItem){
         if (newItem.name == ""){
@@ -21,7 +25,7 @@ class Order {
         else if (newItem.description == ""){
             print("description property of \(newItem) is blank")
         }
-        else if (newItem.price! < 0.0){
+        else if (newItem.price < 0.0){
             print("price property of \(newItem) is negative")
         }
         
@@ -30,7 +34,7 @@ class Order {
     
         let indexOfItem = items.firstIndex(where: { $0.name == newItem.name})
         if (indexOfItem != nil) {
-            items[indexOfItem!].quantity! += 1
+            items[indexOfItem!].quantity += newItem.quantity
         }
         else {
             items.append(newItem)
