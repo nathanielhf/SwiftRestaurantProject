@@ -25,14 +25,11 @@ var foodDescriptions = ["0", "1", "2", "3", "4", "5", "6"]
 var foodPrices =  [11.99, 12.99, 12.88, 11.34, 12.34, 11.34, 12.34]
 var foodIndex : Int?
 
-// array (tuple? Dictionary?) holding all food in order
-// each index has name, description, price, and quantity of a food or beverage item
-// this is passed to itemView on segue
-// itemView can increase quantity of item or remove it from DS altogether
-// .... I want this to be similar to an array of objects
-var newOrder = Order()
+
 
 class BeveragesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var newOrder : Order?
     
     @IBOutlet weak var tableBeverages: UITableView!
     
@@ -41,7 +38,12 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        // initialize food data
+        foodIndex = nil
+        beverageIndex = nil
+        selectedDesc = ""
+        selectedName = ""
+        selectedPrice = nil
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,7 +56,7 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
             count = beverages.count
         }
         
-        if tableView == self.tableFoods{
+        else if tableView == self.tableFoods{
             count = foods.count
         }
         
@@ -70,7 +72,7 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
             cell!.textLabel?.text = beverages[indexPath.row]
         }
         
-        if tableView == self.tableFoods{
+        else if tableView == self.tableFoods{
             cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath)
             cell!.textLabel?.text = foods[indexPath.row]
         }
@@ -80,21 +82,21 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if tableView == tableBeverages{
+
+        if tableView == self.tableBeverages{
             foodIndex = nil
             beverageIndex = indexPath.row
             selectedName = beverages[beverageIndex!]
             selectedDesc = beverageDescriptions[beverageIndex!]
             selectedPrice = beveragePrices[beverageIndex!]
         }
-        if tableView == tableFoods{
+        else if tableView == self.tableFoods{
             foodIndex = indexPath.row
             beverageIndex = nil
             selectedName = foods[foodIndex!]
             selectedDesc = foodDescriptions[foodIndex!]
             selectedPrice = foodPrices[foodIndex!]
         }
-        performSegue(withIdentifier: "foodSegue", sender: self)
+        //performSegue(withIdentifier: "foodSegue", sender: self)
     }
 }

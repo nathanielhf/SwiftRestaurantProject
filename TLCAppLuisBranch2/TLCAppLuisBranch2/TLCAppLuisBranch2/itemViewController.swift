@@ -34,7 +34,7 @@ class itemViewController: UIViewController {
     }
     
     @IBAction func stepperItemQuantity(_ sender: UIStepper) {
-        itemQuantity.text = String(format: "%d", sender.value)
+        itemQuantity.text = String(format: "%.0f", sender.value)
         
     }
     // add function to change quantity of item
@@ -47,12 +47,12 @@ class itemViewController: UIViewController {
         // if one item, add 1 item to newOrder array (quantity defaults to 1)
         if (quantity == 1) {
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!)
-            newOrder?.addItem(newItem!)
+            //newOrder?.addItem(newItem!)
         }
         // else set quantity of newItem to stepper-specified quantity
         else if (quantity > 1) {
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!, quantity: quantity)
-            newOrder?.addItem(newItem!)
+           // newOrder?.addItem(newItem!)
         }
     }
     

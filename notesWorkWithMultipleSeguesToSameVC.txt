@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/29218345/multiple-segues-to-the-same-view-controller
+- just use storyboard, no programmatic 

@@ -37,6 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Begin order"/>
                                 <connections>
+                                    <action selector="beginOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWR-WF-kel"/>
                                     <segue destination="Fx4-04-WB4" kind="show" id="1mm-B8-jUk"/>
                                 </connections>
                             </button>
@@ -80,6 +81,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="he4-0W-h1l" kind="show" id="lHU-Zz-S9F"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -330,6 +334,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TWp-93-IR9"/>
+        <segue reference="lHU-Zz-S9F"/>
+        <segue reference="OAx-1g-gSo"/>
     </inferredMetricsTieBreakers>
 </document>
