@@ -308,6 +308,7 @@
                         <outlet property="itemName" destination="6CT-rD-kjn" id="Xjm-12-H34"/>
                         <outlet property="itemPrice" destination="VBn-Sa-gm4" id="awG-kD-5oz"/>
                         <outlet property="itemQuantity" destination="Saz-ie-M7o" id="p61-vX-deG"/>
+                        <outlet property="quantityStepper" destination="tka-dB-nKN" id="2s1-Zh-34B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBa-jw-svW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -334,7 +335,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="te4-9A-QUe"/>
-        <segue reference="OAx-1g-gSo"/>
+        <segue reference="lHU-Zz-S9F"/>
+        <segue reference="TWp-93-IR9"/>
     </inferredMetricsTieBreakers>
 </document>

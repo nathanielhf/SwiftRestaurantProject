@@ -9,7 +9,7 @@
 import UIKit
 
 
-
+//let newOrder = Order()
 class ViewController: UIViewController {
     
     let newOrder = Order()

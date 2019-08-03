@@ -11,6 +11,8 @@ import UIKit
 
 class itemViewController: UIViewController {
 
+    var accessedController : ViewController = ViewController(nibName: nil, bundle: nil)
+    
     @IBOutlet weak var itemName: UILabel!
     
     @IBOutlet weak var itemPrice: UILabel!
@@ -21,6 +23,7 @@ class itemViewController: UIViewController {
     
     @IBOutlet weak var itemQuantity: UITextField!
     
+    @IBOutlet weak var quantityStepper: UIStepper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,11 @@ class itemViewController: UIViewController {
         itemPrice.text = String(format: "%.2f", selectedPrice!)
         itemDescription.text = selectedDesc
         itemQuantity.text = "0"
+        quantityStepper.value = 0
+        print(quantityStepper.value)
+        print(foodIndex == nil)
+        print(beverageIndex == nil)
+        print(accessedController.newOrder?.items)
     }
     
     @IBAction func stepperItemQuantity(_ sender: UIStepper) {
@@ -47,12 +55,12 @@ class itemViewController: UIViewController {
         // if one item, add 1 item to newOrder array (quantity defaults to 1)
         if (quantity == 1) {
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!)
-            //newOrder?.addItem(newItem!)
+            accessedController.newOrder?.addItem(newItem!)
         }
         // else set quantity of newItem to stepper-specified quantity
         else if (quantity > 1) {
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!, quantity: quantity)
-           // newOrder?.addItem(newItem!)
+            accessedController.newOrder?.addItem(newItem!)
         }
     }
     
