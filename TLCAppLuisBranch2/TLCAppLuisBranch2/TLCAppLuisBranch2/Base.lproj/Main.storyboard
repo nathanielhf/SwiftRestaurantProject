@@ -80,9 +80,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="he4-0W-h1l" kind="show" identifier="beverageSegue" id="nrj-7M-GFe"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -173,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYD-vM-76f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4625" y="194"/>
+            <point key="canvasLocation" x="4531.884057971015" y="137.94642857142856"/>
         </scene>
         <!--Item-->
         <scene sceneID="ljL-xv-gex">
@@ -273,7 +270,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nrj-7M-GFe"/>
-        <segue reference="TWp-93-IR9"/>
+        <segue reference="OAx-1g-gSo"/>
     </inferredMetricsTieBreakers>
 </document>

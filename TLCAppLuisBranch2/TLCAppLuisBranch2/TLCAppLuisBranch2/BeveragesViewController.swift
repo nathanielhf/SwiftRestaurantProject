@@ -88,6 +88,6 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
             selectedDesc = foodDescriptions[foodIndex!]
             selectedPrice = foodPrices[foodIndex!]
         }
-        //performSegue(withIdentifier: "foodSegue", sender: self)
+        performSegue(withIdentifier: "foodSegue", sender: self)
     }
 }
