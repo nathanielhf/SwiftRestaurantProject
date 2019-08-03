@@ -68,5 +68,6 @@ class itemViewController: UIViewController {
         testItems.append("\(quantity) \(selectedName)")
         print(testItems)
         print(newOrder?.items)
+        _ = navigationController?.popViewController(animated: true)
     }
 }
