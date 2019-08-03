@@ -35,10 +35,13 @@ class itemViewController: UIViewController {
         itemDescription.text = selectedDesc
         itemQuantity.text = "0"
         quantityStepper.value = 0
+        /*
         print(quantityStepper.value)
         print(foodIndex == nil)
         print(beverageIndex == nil)
         print(accessedController.newOrder?.items)
+        print(testItems)
+        */
     }
     
     @IBAction func stepperItemQuantity(_ sender: UIStepper) {
@@ -55,13 +58,15 @@ class itemViewController: UIViewController {
         // if one item, add 1 item to newOrder array (quantity defaults to 1)
         if (quantity == 1) {
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!)
-            accessedController.newOrder?.addItem(newItem!)
+            newOrder?.addItem(newItem!)
         }
         // else set quantity of newItem to stepper-specified quantity
         else if (quantity > 1) {
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!, quantity: quantity)
-            accessedController.newOrder?.addItem(newItem!)
+            newOrder?.addItem(newItem!)
         }
+        testItems.append("\(quantity) \(selectedName)")
+        print(testItems)
+        print(newOrder?.items)
     }
-    
 }

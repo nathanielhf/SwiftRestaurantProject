@@ -12,7 +12,7 @@ import UIKit
 //let newOrder = Order()
 class ViewController: UIViewController {
     
-    let newOrder = Order()
+    //var newOrder = Order()
 
     override func viewDidLoad() {
         super.viewDidLoad()

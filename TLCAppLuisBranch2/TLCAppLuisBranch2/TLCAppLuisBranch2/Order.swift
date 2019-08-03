@@ -12,6 +12,7 @@ class Order {
     //var Quantity: Int?
     // items array takes tuple with values MenuItem (a food/beverage object) and Quantity
     var items = [MenuItem]()
+    var testItems : [String] = []
     
     public init?() {
         self.items = []

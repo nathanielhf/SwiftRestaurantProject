@@ -11,9 +11,11 @@
 import UIKit
 
 //Constants and stuff, these could be grouped into other data structures, such as tuples and/or dictionaries
+var newOrder = Order()
 var selectedName : String?
 var selectedPrice : Double?
 var selectedDesc : String?
+var testItems : [String] = []
 
 var beverages = ["martini", "coke", "pepsi", "tequila", "rum", "cointreau", "mezcal", "merlot", "pinot grigio", "daiquiri"]
 var beverageDescriptions = ["lorem ipsum", "lorem lorem", "ipsum", "lorem lorem", "ipsum", "lorem ipsum", "lorem lorem", "ipsum", "lorem lorem", "ipsum"]
