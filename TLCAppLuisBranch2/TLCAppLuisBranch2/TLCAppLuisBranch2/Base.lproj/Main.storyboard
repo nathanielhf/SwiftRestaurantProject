@@ -82,7 +82,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="he4-0W-h1l" kind="show" id="lHU-Zz-S9F"/>
+                                            <segue destination="he4-0W-h1l" kind="show" identifier="beverageSegue" id="lHU-Zz-S9F"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -334,7 +334,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lHU-Zz-S9F"/>
+        <segue reference="te4-9A-QUe"/>
         <segue reference="OAx-1g-gSo"/>
     </inferredMetricsTieBreakers>
 </document>
