@@ -23,8 +23,8 @@ class SummaryTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "\(newOrder!.items[indexPath.row].quantity) \(newOrder!.items[indexPath.row].name) @ \(newOrder!.items[indexPath.row].price)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "orderCell", for: indexPath)
+        cell.textLabel?.text = "\(newOrder!.items[indexPath.row].quantity) \(newOrder!.items[indexPath.row].name) @ $\(newOrder!.items[indexPath.row].price)"
         
         return cell
         
