@@ -66,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Review order"/>
                                 <connections>
-                                    <segue destination="CDG-Wf-Gz0" kind="show" id="OAx-1g-gSo"/>
+                                    <segue destination="Zfv-u8-grs" kind="show" id="gOG-Tl-rYN"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zYP-rr-7w7">
@@ -152,15 +152,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Hm-9c-dWZ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="709"/>
+                                <rect key="frame" x="-24" y="88" width="438" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wO8-wl-7rc">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="438" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wO8-wl-7rc" id="xJk-fU-68B">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wO8-wl-7rc" id="xJk-fU-68B">
+                                            <rect key="frame" x="0.0" y="0.0" width="438" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agy-Q8-vVa">
@@ -218,10 +218,44 @@
                     <navigationItem key="navigationItem" title="Order Summary" id="WUK-PB-sTe">
                         <barButtonItem key="backBarButtonItem" title="Summary" id="O1c-Y7-J9q"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="orderTableCell" destination="wO8-wl-7rc" id="xJ4-kZ-Rpu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYD-vM-76f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4531.884057971015" y="137.94642857142856"/>
+            <point key="canvasLocation" x="5372" y="138"/>
+        </scene>
+        <!--Order Summary-->
+        <scene sceneID="ao2-3R-giy">
+            <objects>
+                <tableViewController id="Zfv-u8-grs" customClass="SummaryTableViewController" customModule="TLCAppLuisBranch2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bGH-lq-evZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderCell" id="Qre-5X-QDI">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qre-5X-QDI" id="d6u-C9-vJX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Zfv-u8-grs" id="Dvd-nu-SSI"/>
+                            <outlet property="delegate" destination="Zfv-u8-grs" id="XZ0-Pj-2oe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Order Summary" id="9ex-cl-9Zd">
+                        <barButtonItem key="backBarButtonItem" title="Summary" id="AtS-k6-orw"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOE-Yq-jbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4532" y="138"/>
         </scene>
         <!--Item-->
         <scene sceneID="ljL-xv-gex">
@@ -261,7 +295,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Review order"/>
                                 <connections>
-                                    <segue destination="CDG-Wf-Gz0" kind="show" id="TWp-93-IR9"/>
+                                    <segue destination="Zfv-u8-grs" kind="show" id="Bax-6i-FXw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CT-rD-kjn">
@@ -336,6 +370,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="te4-9A-QUe"/>
-        <segue reference="TWp-93-IR9"/>
+        <segue reference="Bax-6i-FXw"/>
     </inferredMetricsTieBreakers>
 </document>

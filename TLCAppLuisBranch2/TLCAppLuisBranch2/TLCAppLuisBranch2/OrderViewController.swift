@@ -12,6 +12,9 @@ class OrderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        for item in newOrder!.items{
+            print("\(item.quantity) \(item.name)")
+        }
 
         // Do any additional setup after loading the view.
     }

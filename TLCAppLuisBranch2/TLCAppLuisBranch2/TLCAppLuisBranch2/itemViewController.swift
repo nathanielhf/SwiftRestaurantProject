@@ -65,9 +65,10 @@ class itemViewController: UIViewController {
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!, quantity: quantity)
             newOrder?.addItem(newItem!)
         }
-        testItems.append("\(quantity) \(selectedName)")
-        print(testItems)
-        print(newOrder?.items)
+        /*
+        for item in newOrder!.items{
+            print("\(item.quantity) \(item.name)")
+        }*/
         _ = navigationController?.popViewController(animated: true)
     }
 }
