@@ -30,11 +30,24 @@ class itemViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        // if item is already in order
+        // populate itemQuantity text field with quantity of item
+        for item in newOrder!.items {
+            if item.name == selectedName {
+                itemQuantity.text = String(item.quantity)
+                quantityStepper.value = Double(item.quantity)
+            }
+            else {
+                itemQuantity.text = "0"
+                quantityStepper.value = 0
+            }
+        }
+        
         itemName.text = selectedName
         itemPrice.text = String(format: "%.2f", selectedPrice!)
         itemDescription.text = selectedDesc
-        itemQuantity.text = "0"
-        quantityStepper.value = 0
+        
+        
         /*
         print(quantityStepper.value)
         print(foodIndex == nil)
@@ -58,11 +71,19 @@ class itemViewController: UIViewController {
         // if one item, add 1 item to newOrder array (quantity defaults to 1)
         if (quantity == 1) {
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!)
+            
+            // if item is already in newOrder, set quantity to 1
+            
             newOrder?.addItem(newItem!)
         }
         // else set quantity of newItem to stepper-specified quantity
         else if (quantity > 1) {
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!, quantity: quantity)
+
+            /**
+             still need to add: if item is already in newOrder, set quantity to quantityStepper.value
+             if it IS 0, remove item from order
+             */
             newOrder?.addItem(newItem!)
         }
         /*
@@ -70,5 +91,10 @@ class itemViewController: UIViewController {
             print("\(item.quantity) \(item.name)")
         }*/
         _ = navigationController?.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func reviewOrder(_ sender: UIButton) {
+        summary = Summary(order : newOrder!, table : seatingTable!)!
     }
 }

@@ -11,7 +11,7 @@ import Foundation
 
 class Summary {
     
-    var sunItems = [MenuItem]();
+    var sumItems = [MenuItem]();
     var subtotal: Double = 0;
     var taxes: Double = 0;
     var total: Double = 0;
@@ -19,7 +19,7 @@ class Summary {
     
     public init?(order: Order, table: SeatingTable){
         
-        self.sunItems = order.items;
+        self.sumItems = order.items;
         
         for item in order.items{
             self.subtotal += item.price * Double(item.quantity);
@@ -31,5 +31,7 @@ class Summary {
         
         self.total = self.subtotal + self.taxes;
     }
+    
+    public init(){}
     
 }

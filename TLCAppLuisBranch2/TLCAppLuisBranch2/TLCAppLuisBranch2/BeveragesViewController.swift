@@ -30,11 +30,13 @@ var foodIndex : Int?
 
 var stateVarTable = "DefaultStateVarTable";
 
+var summary = Summary()
+
 
 
 class BeveragesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var newOrder : Order?
+    //var newOrder : Order?
     
     var seatingTable = SeatingTable(code: "DEFAULT");
     
@@ -52,6 +54,7 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
         selectedName = ""
         selectedPrice = nil
         stateVarTable = seatingTable!.code!
+        seatingTable?.code = stateVarTable
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -106,5 +109,10 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
             selectedPrice = foodPrices[foodIndex!]
         }
         //performSegue(withIdentifier: "foodSegue", sender: self)
+    }
+    
+    
+    @IBAction func reviewOrder(_ sender: UIButton) {
+        summary = Summary(order : newOrder!, table : seatingTable!)!
     }
 }
