@@ -12,6 +12,7 @@ import UIKit
 
 //Constants and stuff, these could be grouped into other data structures, such as tuples and/or dictionaries
 var newOrder = Order()
+var seatingTable = SeatingTable(code: "DEFAULT");
 var selectedName : String?
 var selectedPrice : Double?
 var selectedDesc : String?
@@ -27,11 +28,15 @@ var foodDescriptions = ["0", "1", "2", "3", "4", "5", "6"]
 var foodPrices =  [11.99, 12.99, 12.88, 11.34, 12.34, 11.34, 12.34]
 var foodIndex : Int?
 
+var stateVarTable = "DefaultStateVarTable";
+
 
 
 class BeveragesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var newOrder : Order?
+    
+    var seatingTable = SeatingTable(code: "DEFAULT");
     
     @IBOutlet weak var tableBeverages: UITableView!
     
@@ -46,6 +51,7 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
         selectedDesc = ""
         selectedName = ""
         selectedPrice = nil
+        stateVarTable = seatingTable!.code!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

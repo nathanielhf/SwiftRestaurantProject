@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0865E07022FB2B06008EFF65 /* SeatingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865E06F22FB2B06008EFF65 /* SeatingTable.swift */; };
+		0865E07222FB2BD6008EFF65 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865E07122FB2BD6008EFF65 /* Summary.swift */; };
 		3758FCC722E3A8F300F18779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758FCC622E3A8F300F18779 /* AppDelegate.swift */; };
 		3758FCC922E3A8F300F18779 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758FCC822E3A8F300F18779 /* ViewController.swift */; };
 		3758FCCC22E3A8F300F18779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3758FCCA22E3A8F300F18779 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0865E06F22FB2B06008EFF65 /* SeatingTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatingTable.swift; sourceTree = "<group>"; };
+		0865E07122FB2BD6008EFF65 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
 		3758FCC322E3A8F300F18779 /* TLCAppLuisBranch2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLCAppLuisBranch2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3758FCC622E3A8F300F18779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3758FCC822E3A8F300F18779 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				3758FCCD22E3A8F400F18779 /* Assets.xcassets */,
 				3758FCCF22E3A8F400F18779 /* LaunchScreen.storyboard */,
 				3758FCD222E3A8F400F18779 /* Info.plist */,
+				0865E06F22FB2B06008EFF65 /* SeatingTable.swift */,
+				0865E07122FB2BD6008EFF65 /* Summary.swift */,
 			);
 			path = TLCAppLuisBranch2;
 			sourceTree = "<group>";
@@ -155,9 +161,11 @@
 			files = (
 				37AFA01222FA277300140989 /* SummaryTableViewController.swift in Sources */,
 				E8F056C522E8FBA00033004F /* MenuItem.swift in Sources */,
+				0865E07022FB2B06008EFF65 /* SeatingTable.swift in Sources */,
 				E8F056C322E8FAF90033004F /* Order.swift in Sources */,
 				3758FCC922E3A8F300F18779 /* ViewController.swift in Sources */,
 				E8F056C122E8EFA10033004F /* OrderViewController.swift in Sources */,
+				0865E07222FB2BD6008EFF65 /* Summary.swift in Sources */,
 				37AB895A22E8BE2F00878622 /* itemViewController.swift in Sources */,
 				3758FCC722E3A8F300F18779 /* AppDelegate.swift in Sources */,
 				3758FCD922E3AB0300F18779 /* BeveragesViewController.swift in Sources */,

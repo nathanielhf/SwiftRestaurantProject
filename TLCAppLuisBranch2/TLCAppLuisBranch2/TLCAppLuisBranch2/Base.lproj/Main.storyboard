@@ -48,6 +48,9 @@
                     <navigationItem key="navigationItem" title="TLC App" id="7Fl-AG-LkB">
                         <barButtonItem key="backBarButtonItem" title="TLC App" id="8rR-xR-1fc"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableField" destination="cmR-oB-Xm2" id="QEp-JZ-nvZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,6 +290,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="te4-9A-QUe"/>
-        <segue reference="Bax-6i-FXw"/>
+        <segue reference="gOG-Tl-rYN"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,8 @@ import UIKit
 //let newOrder = Order()
 class ViewController: UIViewController {
     
+    @IBOutlet weak var tableField: UITextField!
+    var tableCode: String?
     //var newOrder = Order()
 
     override func viewDidLoad() {
@@ -29,6 +31,12 @@ class ViewController: UIViewController {
 //        if let destinationVC = segue.destination as? BeveragesViewController {
 //            destinationVC.newOrder = self.newOrder
 //        }
+        tableCode = tableField.text
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let TempVC:BeveragesViewController = segue.destination as! BeveragesViewController
+        TempVC.seatingTable!.code = tableField.text!;
     }
     
 }
