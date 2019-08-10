@@ -17,6 +17,23 @@
 		3758FCD922E3AB0300F18779 /* BeveragesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758FCD822E3AB0300F18779 /* BeveragesViewController.swift */; };
 		37AB895A22E8BE2F00878622 /* itemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB895922E8BE2F00878622 /* itemViewController.swift */; };
 		37AFA01222FA277300140989 /* SummaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AFA01122FA277300140989 /* SummaryTableViewController.swift */; };
+		37C61AEE22FF6315001D1172 /* bacon wrapped shrimp.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AEB22FF6315001D1172 /* bacon wrapped shrimp.jpeg */; };
+		37C61AEF22FF6315001D1172 /* bacon burger.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AEC22FF6315001D1172 /* bacon burger.jpeg */; };
+		37C61B0022FF6334001D1172 /* mezcal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AF122FF6333001D1172 /* mezcal.jpeg */; };
+		37C61B0122FF6334001D1172 /* coke.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AF222FF6333001D1172 /* coke.jpeg */; };
+		37C61B0222FF6334001D1172 /* pizza.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AF322FF6333001D1172 /* pizza.jpeg */; };
+		37C61B0322FF6334001D1172 /* daiquiry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AF422FF6333001D1172 /* daiquiry.jpeg */; };
+		37C61B0422FF6334001D1172 /* cheeseburger.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AF522FF6333001D1172 /* cheeseburger.jpeg */; };
+		37C61B0522FF6334001D1172 /* pepsi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AF622FF6333001D1172 /* pepsi.jpeg */; };
+		37C61B0622FF6334001D1172 /* martini.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AF722FF6333001D1172 /* martini.jpeg */; };
+		37C61B0722FF6334001D1172 /* fish and chips.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AF822FF6333001D1172 /* fish and chips.jpeg */; };
+		37C61B0822FF6334001D1172 /* cointreau.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AF922FF6334001D1172 /* cointreau.jpeg */; };
+		37C61B0922FF6334001D1172 /* grilled shrimp.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AFA22FF6334001D1172 /* grilled shrimp.jpeg */; };
+		37C61B0A22FF6334001D1172 /* tequila.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AFB22FF6334001D1172 /* tequila.jpeg */; };
+		37C61B0B22FF6334001D1172 /* hamburger.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AFC22FF6334001D1172 /* hamburger.jpeg */; };
+		37C61B0C22FF6334001D1172 /* pinot grigio.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AFD22FF6334001D1172 /* pinot grigio.jpeg */; };
+		37C61B0D22FF6334001D1172 /* rum.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AFE22FF6334001D1172 /* rum.jpeg */; };
+		37C61B0E22FF6334001D1172 /* merlot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 37C61AFF22FF6334001D1172 /* merlot.jpeg */; };
 		E8F056C122E8EFA10033004F /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F056C022E8EFA10033004F /* OrderViewController.swift */; };
 		E8F056C322E8FAF90033004F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F056C222E8FAF90033004F /* Order.swift */; };
 		E8F056C522E8FBA00033004F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F056C422E8FBA00033004F /* MenuItem.swift */; };
@@ -35,6 +52,23 @@
 		3758FCD822E3AB0300F18779 /* BeveragesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesViewController.swift; sourceTree = "<group>"; };
 		37AB895922E8BE2F00878622 /* itemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemViewController.swift; sourceTree = "<group>"; };
 		37AFA01122FA277300140989 /* SummaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewController.swift; sourceTree = "<group>"; };
+		37C61AEB22FF6315001D1172 /* bacon wrapped shrimp.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bacon wrapped shrimp.jpeg"; sourceTree = "<group>"; };
+		37C61AEC22FF6315001D1172 /* bacon burger.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bacon burger.jpeg"; sourceTree = "<group>"; };
+		37C61AF122FF6333001D1172 /* mezcal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mezcal.jpeg; sourceTree = "<group>"; };
+		37C61AF222FF6333001D1172 /* coke.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coke.jpeg; sourceTree = "<group>"; };
+		37C61AF322FF6333001D1172 /* pizza.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pizza.jpeg; sourceTree = "<group>"; };
+		37C61AF422FF6333001D1172 /* daiquiry.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daiquiry.jpeg; sourceTree = "<group>"; };
+		37C61AF522FF6333001D1172 /* cheeseburger.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cheeseburger.jpeg; sourceTree = "<group>"; };
+		37C61AF622FF6333001D1172 /* pepsi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pepsi.jpeg; sourceTree = "<group>"; };
+		37C61AF722FF6333001D1172 /* martini.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martini.jpeg; sourceTree = "<group>"; };
+		37C61AF822FF6333001D1172 /* fish and chips.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fish and chips.jpeg"; sourceTree = "<group>"; };
+		37C61AF922FF6334001D1172 /* cointreau.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cointreau.jpeg; sourceTree = "<group>"; };
+		37C61AFA22FF6334001D1172 /* grilled shrimp.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grilled shrimp.jpeg"; sourceTree = "<group>"; };
+		37C61AFB22FF6334001D1172 /* tequila.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tequila.jpeg; sourceTree = "<group>"; };
+		37C61AFC22FF6334001D1172 /* hamburger.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamburger.jpeg; sourceTree = "<group>"; };
+		37C61AFD22FF6334001D1172 /* pinot grigio.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pinot grigio.jpeg"; sourceTree = "<group>"; };
+		37C61AFE22FF6334001D1172 /* rum.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rum.jpeg; sourceTree = "<group>"; };
+		37C61AFF22FF6334001D1172 /* merlot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = merlot.jpeg; sourceTree = "<group>"; };
 		E8F056C022E8EFA10033004F /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		E8F056C222E8FAF90033004F /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		E8F056C422E8FBA00033004F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
@@ -70,6 +104,23 @@
 		3758FCC522E3A8F300F18779 /* TLCAppLuisBranch2 */ = {
 			isa = PBXGroup;
 			children = (
+				37C61AF522FF6333001D1172 /* cheeseburger.jpeg */,
+				37C61AF922FF6334001D1172 /* cointreau.jpeg */,
+				37C61AF222FF6333001D1172 /* coke.jpeg */,
+				37C61AF422FF6333001D1172 /* daiquiry.jpeg */,
+				37C61AF822FF6333001D1172 /* fish and chips.jpeg */,
+				37C61AFA22FF6334001D1172 /* grilled shrimp.jpeg */,
+				37C61AFC22FF6334001D1172 /* hamburger.jpeg */,
+				37C61AF722FF6333001D1172 /* martini.jpeg */,
+				37C61AFF22FF6334001D1172 /* merlot.jpeg */,
+				37C61AF122FF6333001D1172 /* mezcal.jpeg */,
+				37C61AF622FF6333001D1172 /* pepsi.jpeg */,
+				37C61AFD22FF6334001D1172 /* pinot grigio.jpeg */,
+				37C61AF322FF6333001D1172 /* pizza.jpeg */,
+				37C61AFE22FF6334001D1172 /* rum.jpeg */,
+				37C61AFB22FF6334001D1172 /* tequila.jpeg */,
+				37C61AEC22FF6315001D1172 /* bacon burger.jpeg */,
+				37C61AEB22FF6315001D1172 /* bacon wrapped shrimp.jpeg */,
 				3758FCC622E3A8F300F18779 /* AppDelegate.swift */,
 				3758FCC822E3A8F300F18779 /* ViewController.swift */,
 				3758FCCA22E3A8F300F18779 /* Main.storyboard */,
@@ -146,8 +197,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C61B0622FF6334001D1172 /* martini.jpeg in Resources */,
+				37C61B0122FF6334001D1172 /* coke.jpeg in Resources */,
+				37C61B0922FF6334001D1172 /* grilled shrimp.jpeg in Resources */,
+				37C61B0422FF6334001D1172 /* cheeseburger.jpeg in Resources */,
+				37C61B0D22FF6334001D1172 /* rum.jpeg in Resources */,
+				37C61B0B22FF6334001D1172 /* hamburger.jpeg in Resources */,
+				37C61B0722FF6334001D1172 /* fish and chips.jpeg in Resources */,
+				37C61B0A22FF6334001D1172 /* tequila.jpeg in Resources */,
+				37C61B0322FF6334001D1172 /* daiquiry.jpeg in Resources */,
 				3758FCD122E3A8F400F18779 /* LaunchScreen.storyboard in Resources */,
+				37C61AEF22FF6315001D1172 /* bacon burger.jpeg in Resources */,
+				37C61B0522FF6334001D1172 /* pepsi.jpeg in Resources */,
 				3758FCCE22E3A8F400F18779 /* Assets.xcassets in Resources */,
+				37C61B0C22FF6334001D1172 /* pinot grigio.jpeg in Resources */,
+				37C61B0222FF6334001D1172 /* pizza.jpeg in Resources */,
+				37C61B0022FF6334001D1172 /* mezcal.jpeg in Resources */,
+				37C61AEE22FF6315001D1172 /* bacon wrapped shrimp.jpeg in Resources */,
+				37C61B0822FF6334001D1172 /* cointreau.jpeg in Resources */,
+				37C61B0E22FF6334001D1172 /* merlot.jpeg in Resources */,
 				3758FCCC22E3A8F300F18779 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

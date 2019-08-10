@@ -45,6 +45,7 @@ class itemViewController: UIViewController {
         itemName.text = selectedName
         itemPrice.text = String(format: "%.2f", selectedPrice!)
         itemDescription.text = selectedDesc
+        itemImage.image = UIImage(named: selectedName! + ".jpeg")
 
     }
     
