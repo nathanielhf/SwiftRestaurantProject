@@ -35,7 +35,8 @@ class Order {
     
         let indexOfItem = items.firstIndex(where: { $0.name == newItem.name})
         if (indexOfItem != nil) {
-            items[indexOfItem!].quantity += newItem.quantity
+            //items[indexOfItem!].quantity += newItem.quantity
+            items[indexOfItem!].quantity = newItem.quantity
         }
         else {
             items.append(newItem)

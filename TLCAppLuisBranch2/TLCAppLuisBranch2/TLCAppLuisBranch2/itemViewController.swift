@@ -30,31 +30,22 @@ class itemViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        // if item is already in order
         // populate itemQuantity text field with quantity of item
+        itemQuantity.text = "0"
+        quantityStepper.value = 0
+        //Change quantity if item is already in order
         for item in newOrder!.items {
+            
             if item.name == selectedName {
                 itemQuantity.text = String(item.quantity)
                 quantityStepper.value = Double(item.quantity)
-            }
-            else {
-                itemQuantity.text = "0"
-                quantityStepper.value = 0
             }
         }
         
         itemName.text = selectedName
         itemPrice.text = String(format: "%.2f", selectedPrice!)
         itemDescription.text = selectedDesc
-        
-        
-        /*
-        print(quantityStepper.value)
-        print(foodIndex == nil)
-        print(beverageIndex == nil)
-        print(accessedController.newOrder?.items)
-        print(testItems)
-        */
+
     }
     
     @IBAction func stepperItemQuantity(_ sender: UIStepper) {
@@ -68,28 +59,20 @@ class itemViewController: UIViewController {
     @IBAction func btnConfirmItem(_ sender: UIButton) {
         let quantity: Int = Int(itemQuantity.text!)!
         
-        // if one item, add 1 item to newOrder array (quantity defaults to 1)
-        if (quantity == 1) {
-            let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!)
-            
-            // if item is already in newOrder, set quantity to 1
-            
-            newOrder?.addItem(newItem!)
-        }
-        // else set quantity of newItem to stepper-specified quantity
-        else if (quantity > 1) {
+        if (quantity >= 1){
             let newItem = MenuItem(name: selectedName!, description: selectedDesc!, price: selectedPrice!, quantity: quantity)
-
-            /**
-             still need to add: if item is already in newOrder, set quantity to quantityStepper.value
-             if it IS 0, remove item from order
-             */
             newOrder?.addItem(newItem!)
         }
-        /*
-        for item in newOrder!.items{
-            print("\(item.quantity) \(item.name)")
-        }*/
+        
+        if (quantity == 0){
+            let n1 = newOrder!.items.count
+            for n0 in 0..<n1{
+                if (newOrder!.items[n1 - n0 - 1].name == selectedName){
+                    newOrder!.items.remove(at: n1 - n0 - 1)
+                }
+            }
+        }
+        
         _ = navigationController?.popViewController(animated: true)
     }
     
