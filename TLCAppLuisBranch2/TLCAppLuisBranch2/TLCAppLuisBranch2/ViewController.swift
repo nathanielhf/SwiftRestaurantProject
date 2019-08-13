@@ -12,15 +12,16 @@ import UIKit
 //let newOrder = Order()
 class ViewController: UIViewController {
     
+    //These are variables for storing the current table number
     @IBOutlet weak var tableField: UITextField!
     var tableCode: String?
-    //var newOrder = Order()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    //This is a function that will be implemented if an array of table objects is implemented in state memory
     @IBAction func beginOrder(_ sender: Any) {
         // array (tuple? Dictionary?) holding all food in order
         // each index has name, description, price, and quantity of a food or beverage item
@@ -34,10 +35,12 @@ class ViewController: UIViewController {
         tableCode = tableField.text
     }
     
+    //This function is for passing information
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let TempVC:BeveragesViewController = segue.destination as! BeveragesViewController
         TempVC.seatingTable!.code = tableField.text!;
-    }
+    }*/
     
 }
 

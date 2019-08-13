@@ -10,8 +10,10 @@ import UIKit
 
 class SummaryTableViewController: UITableViewController {
     
+    //This array has the lines to be shown in the table view
     var printArray = [String]()
     
+    //This function adds the lines in printArray to the table view
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,27 +28,25 @@ class SummaryTableViewController: UITableViewController {
         
     }
 
-    // MARK: - Table view data source
-    
+    //This function returns the number of elements in printArray
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         //return newOrder!.items.count
         return printArray.count
     }
     
-    
+    //This function returns each line in printArray
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "orderCell", for: indexPath)
-        //cell.textLabel?.text = "\(newOrder!.items[indexPath.row].quantity) \(newOrder!.items[indexPath.row].name) @ $\(newOrder!.items[indexPath.row].price)"
         cell.textLabel?.text = printArray[indexPath.row]
         
         return cell
         
-    } // end func
+    }
     
+    //This function may do something in the future
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let myIndex = indexPath.row
-        //performSegue(withIdentifier: "segue", sender: self)
     }
 
 }

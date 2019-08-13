@@ -13,6 +13,7 @@ class itemViewController: UIViewController {
 
     var accessedController : ViewController = ViewController(nibName: nil, bundle: nil)
     
+    //These are all view elements
     @IBOutlet weak var itemName: UILabel!
     
     @IBOutlet weak var itemPrice: UILabel!
@@ -42,6 +43,7 @@ class itemViewController: UIViewController {
             }
         }
         
+        //Populate view elements with elected item information:
         itemName.text = selectedName
         itemPrice.text = String(format: "%.2f", selectedPrice!)
         itemDescription.text = selectedDesc
@@ -49,14 +51,13 @@ class itemViewController: UIViewController {
 
     }
     
+    //This function displays the selected quantity of the item
     @IBAction func stepperItemQuantity(_ sender: UIStepper) {
         itemQuantity.text = String(format: "%.0f", sender.value)
         
     }
-    // add function to change quantity of item
-    // and create new object of item if doesn't exist
     
-    // do we need to send the object back using a segue? perhaps it can simply be added to an Order object instatiated in a different file
+    //This function grabs the selected quantity of the current item and adds the item with its selected quantity to the current order
     @IBAction func btnConfirmItem(_ sender: UIButton) {
         let quantity: Int = Int(itemQuantity.text!)!
         
@@ -65,6 +66,7 @@ class itemViewController: UIViewController {
             newOrder?.addItem(newItem!)
         }
         
+        //Items can be removed from the order by setting the quantity to 0
         if (quantity == 0){
             let n1 = newOrder!.items.count
             for n0 in 0..<n1{
@@ -73,11 +75,11 @@ class itemViewController: UIViewController {
                 }
             }
         }
-        
+        //After the order is confirmed, the menu view is displayed
         _ = navigationController?.popViewController(animated: true)
     }
     
-    
+    //This function initializes a new summary object with all items order by the user so far
     @IBAction func reviewOrder(_ sender: UIButton) {
         summary = Summary(order : newOrder!, table : seatingTable!)!
     }

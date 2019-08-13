@@ -10,40 +10,34 @@
 
 import UIKit
 
-//Constants and stuff, these could be grouped into other data structures, such as tuples and/or dictionaries
-var newOrder = Order()
-var seatingTable = SeatingTable(code: "DEFAULT");
+var newOrder = Order() //This is the current order object that will have the ordered items
+var seatingTable = SeatingTable(code: "DEFAULT"); //Seating table should be passed from the first view
+var stateVarTable = "DefaultStateVarTable"; //This is a default table number
+var summary = Summary() //This is an empty order summary object that will be populated with the items ordered by the user
+
+//The following variables are for storing user selected parameters
 var selectedName : String?
 var selectedPrice : Double?
 var selectedDesc : String?
-var testItems : [String] = []
-
-var beverages = ["martini", "coke", "pepsi", "tequila", "rum"]
-var beverageDescriptions = ["Shaken, not stirred", "Better than pepsi, allegedly", "Not as good as coke, allegedly", "Tequila has prebiotics", "For the pirates"]
-var beveragePrices = [12.5, 2.5, 2.5, 7.5, 9.5]
 var beverageIndex : Int?
-
-var foods = ["hamburger", "cheeseburger", "bacon wrapped shrimp", "grilled shrimp", "pizza"]
-var foodDescriptions = ["Made with juicy ground beef", "Same as the hamburger but with cheese on top", "Shrimp wrapped in slices of bacon", "Shrimp with no bacon", "Bread with tomato sauce and cheese on top"]
-var foodPrices =  [11.99, 12.99, 12.88, 11.34, 12.34]
 var foodIndex : Int?
 
-var stateVarTable = "DefaultStateVarTable";
+//The following variables are for storing application related constants
+let beverages = ["martini", "coke", "pepsi", "tequila", "rum"]
+let beverageDescriptions = ["Shaken, not stirred", "Better than pepsi, allegedly", "Not as good as coke, allegedly", "Tequila has prebiotics", "For the pirates"]
+let beveragePrices = [12.5, 2.5, 2.5, 7.5, 9.5]
 
-var summary = Summary()
-
-
+let foods = ["hamburger", "cheeseburger", "bacon wrapped shrimp", "grilled shrimp", "pizza"]
+let foodDescriptions = ["Made with juicy ground beef", "Same as the hamburger but with cheese on top", "Shrimp wrapped in slices of bacon", "Shrimp with no bacon", "Bread with tomato sauce and cheese on top"]
+let foodPrices =  [11.99, 12.99, 12.88, 11.34, 12.34]
 
 class BeveragesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    //var newOrder : Order?
+    @IBOutlet weak var tableBeverages: UITableView! //This table has beverage names
     
-    var seatingTable = SeatingTable(code: "DEFAULT");
+    @IBOutlet weak var tableFoods: UITableView! //This table has food names
     
-    @IBOutlet weak var tableBeverages: UITableView!
-    
-    @IBOutlet weak var tableFoods: UITableView!
-    
+    //This funciton is executed when the menu view loads
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -57,6 +51,7 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
         seatingTable?.code = stateVarTable
     }
     
+    //This function returns the number of rows in each table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         var count : Int?
@@ -74,6 +69,7 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
         return count!
     }
     
+    //This function populates the cells in each table with food or beverage names
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell:UITableViewCell?
@@ -92,6 +88,7 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
         
     }
     
+    //This function saves the information about the item selected by the user
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         if tableView == self.tableBeverages{
@@ -108,10 +105,9 @@ class BeveragesViewController: UIViewController, UITableViewDataSource, UITableV
             selectedDesc = foodDescriptions[foodIndex!]
             selectedPrice = foodPrices[foodIndex!]
         }
-        //performSegue(withIdentifier: "foodSegue", sender: self)
     }
     
-    
+    //This function initializes a new summary object with all items order by the user so far
     @IBAction func reviewOrder(_ sender: UIButton) {
         summary = Summary(order : newOrder!, table : seatingTable!)!
     }
