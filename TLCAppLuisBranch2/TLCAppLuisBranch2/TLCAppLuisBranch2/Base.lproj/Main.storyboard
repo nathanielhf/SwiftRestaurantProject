@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBa-jw-svW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4531.884057971015" y="-566.51785714285711"/>
+            <point key="canvasLocation" x="4532" y="-570"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oE6-CN-GC2">
@@ -296,6 +296,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ug8-2R-PQb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qxj-pl-rdX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -309,7 +310,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Bax-6i-FXw"/>
+        <segue reference="gOG-Tl-rYN"/>
         <segue reference="te4-9A-QUe"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -18,14 +18,14 @@ var selectedPrice : Double?
 var selectedDesc : String?
 var testItems : [String] = []
 
-var beverages = ["martini", "coke", "pepsi", "tequila", "rum", "cointreau", "mezcal", "merlot", "pinot grigio", "daiquiri"]
-var beverageDescriptions = ["lorem ipsum", "lorem lorem", "ipsum", "lorem lorem", "ipsum", "lorem ipsum", "lorem lorem", "ipsum", "lorem lorem", "ipsum"]
-var beveragePrices = [2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5]
+var beverages = ["martini", "coke", "pepsi", "tequila", "rum"]
+var beverageDescriptions = ["Shaken, not stirred", "Better than pepsi, allegedly", "Not as good as coke, allegedly", "Tequila has prebiotics", "For the pirates"]
+var beveragePrices = [12.5, 2.5, 2.5, 7.5, 9.5]
 var beverageIndex : Int?
 
-var foods = ["hamburger", "cheeseburger", "bacon burger", "bacon wrapped shrimp", "grilled shrimp", "fish and chips", "pizza"]
-var foodDescriptions = ["0", "1", "2", "3", "4", "5", "6"]
-var foodPrices =  [11.99, 12.99, 12.88, 11.34, 12.34, 11.34, 12.34]
+var foods = ["hamburger", "cheeseburger", "bacon wrapped shrimp", "grilled shrimp", "pizza"]
+var foodDescriptions = ["Made with juicy ground beef", "Same as the hamburger but with cheese on top", "Shrimp wrapped in slices of bacon", "Shrimp with no bacon", "Bread with tomato sauce and cheese on top"]
+var foodPrices =  [11.99, 12.99, 12.88, 11.34, 12.34]
 var foodIndex : Int?
 
 var stateVarTable = "DefaultStateVarTable";
